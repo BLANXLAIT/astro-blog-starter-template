@@ -2,7 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { SITE_TITLE, SITE_DESCRIPTION, COMPANY_NAME, COMPANY_TAGLINE } from '../consts';
 ---
 
 <!doctype html>
@@ -12,38 +12,146 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	</head>
 	<body>
 		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+		<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<!-- Hero Section -->
+			<section class="bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 text-white py-20 px-6 rounded-lg mb-16">
+				<div class="max-w-4xl mx-auto text-center">
+					<h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+						Find Your Next
+						<span class="text-blue-200">Tech Superstar</span>
+					</h1>
+					<p class="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
+						{COMPANY_TAGLINE} - Specialized IT recruitment connecting exceptional talent with innovative companies.
+					</p>
+					<div class="flex flex-col md:flex-row gap-4 justify-center">
+						<a href="/contact" class="bg-white text-blue-700 hover:bg-blue-50 font-bold py-4 px-8 rounded-lg transition-colors text-lg">
+							Hire Talent
+						</a>
+						<a href="/jobs" class="border-2 border-white text-white hover:bg-white hover:text-blue-700 font-bold py-4 px-8 rounded-lg transition-colors text-lg">
+							Find Jobs
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Services Section -->
+			<section class="mb-16">
+				<div class="text-center mb-12">
+					<h2 class="text-4xl font-bold text-gray-800 mb-4">Our Specialties</h2>
+					<p class="text-xl text-gray-600 max-w-2xl mx-auto">
+						We focus exclusively on IT roles, understanding the nuances of each technology stack and role.
+					</p>
+				</div>
+				
+				<div class="grid md:grid-cols-3 gap-8 mb-12">
+					<div class="bg-white p-8 rounded-lg shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+						<div class="text-3xl mb-4">💻</div>
+						<h3 class="text-2xl font-bold text-gray-800 mb-4">Software Engineers</h3>
+						<p class="text-gray-600 mb-4">Full-stack, frontend, backend, and mobile developers across all major frameworks and languages.</p>
+						<ul class="text-sm text-gray-500 space-y-1">
+							<li>• React, Vue, Angular</li>
+							<li>• Python, Node.js, Java</li>
+							<li>• iOS, Android, React Native</li>
+						</ul>
+					</div>
+					
+					<div class="bg-white p-8 rounded-lg shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+						<div class="text-3xl mb-4">🚀</div>
+						<h3 class="text-2xl font-bold text-gray-800 mb-4">DevOps & Cloud</h3>
+						<p class="text-gray-600 mb-4">Infrastructure experts, cloud architects, and DevOps engineers for modern deployment pipelines.</p>
+						<ul class="text-sm text-gray-500 space-y-1">
+							<li>• AWS, Azure, GCP</li>
+							<li>• Kubernetes, Docker</li>
+							<li>• CI/CD, Infrastructure as Code</li>
+						</ul>
+					</div>
+					
+					<div class="bg-white p-8 rounded-lg shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+						<div class="text-3xl mb-4">👨‍💼</div>
+						<h3 class="text-2xl font-bold text-gray-800 mb-4">Tech Leadership</h3>
+						<p class="text-gray-600 mb-4">Engineering managers, CTOs, tech leads, and senior architects who can drive technical vision.</p>
+						<ul class="text-sm text-gray-500 space-y-1">
+							<li>• Engineering Managers</li>
+							<li>• Solution Architects</li>
+							<li>• VP Engineering, CTOs</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- Stats Section -->
+			<section class="bg-gray-50 py-16 px-6 rounded-lg mb-16">
+				<div class="max-w-4xl mx-auto">
+					<h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Proven Results</h2>
+					<div class="grid md:grid-cols-4 gap-8 text-center">
+						<div>
+							<div class="text-4xl font-bold text-blue-600 mb-2">500+</div>
+							<div class="text-gray-600">Successful Placements</div>
+						</div>
+						<div>
+							<div class="text-4xl font-bold text-blue-600 mb-2">95%</div>
+							<div class="text-gray-600">Client Satisfaction</div>
+						</div>
+						<div>
+							<div class="text-4xl font-bold text-blue-600 mb-2">14</div>
+							<div class="text-gray-600">Average Days to Hire</div>
+						</div>
+						<div>
+							<div class="text-4xl font-bold text-blue-600 mb-2">200+</div>
+							<div class="text-gray-600">Partner Companies</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Process Section -->
+			<section class="mb-16">
+				<div class="text-center mb-12">
+					<h2 class="text-4xl font-bold text-gray-800 mb-4">Our Process</h2>
+					<p class="text-xl text-gray-600 max-w-2xl mx-auto">
+						A streamlined approach that saves you time and delivers quality results.
+					</p>
+				</div>
+				
+				<div class="grid md:grid-cols-4 gap-8">
+					<div class="text-center">
+						<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-2xl font-bold text-blue-600 mx-auto mb-4">1</div>
+						<h3 class="text-xl font-bold text-gray-800 mb-2">Discovery</h3>
+						<p class="text-gray-600">We understand your tech stack, culture, and specific requirements.</p>
+					</div>
+					<div class="text-center">
+						<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-2xl font-bold text-blue-600 mx-auto mb-4">2</div>
+						<h3 class="text-xl font-bold text-gray-800 mb-2">Sourcing</h3>
+						<p class="text-gray-600">Targeted outreach to passive candidates and our extensive network.</p>
+					</div>
+					<div class="text-center">
+						<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-2xl font-bold text-blue-600 mx-auto mb-4">3</div>
+						<h3 class="text-xl font-bold text-gray-800 mb-2">Screening</h3>
+						<p class="text-gray-600">Technical and cultural fit assessment with thorough vetting.</p>
+					</div>
+					<div class="text-center">
+						<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-2xl font-bold text-blue-600 mx-auto mb-4">4</div>
+						<h3 class="text-xl font-bold text-gray-800 mb-2">Placement</h3>
+						<p class="text-gray-600">Smooth onboarding and ongoing support for successful integration.</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA Section -->
+			<section class="bg-indigo-600 text-white py-16 px-6 rounded-lg text-center">
+				<h2 class="text-4xl font-bold mb-4">Ready to Build Your Dream Team?</h2>
+				<p class="text-xl mb-8 text-indigo-100 max-w-2xl mx-auto">
+					Let's discuss your hiring needs and find the perfect IT professionals for your company.
+				</p>
+				<div class="flex flex-col md:flex-row gap-4 justify-center">
+					<a href="/contact" class="bg-white text-indigo-600 hover:bg-indigo-50 font-bold py-4 px-8 rounded-lg transition-colors text-lg">
+						Schedule a Consultation
+					</a>
+					<a href="/blog" class="border-2 border-white text-white hover:bg-white hover:text-indigo-600 font-bold py-4 px-8 rounded-lg transition-colors text-lg">
+						Read Our Insights
+					</a>
+				</div>
+			</section>
 		</main>
 		<Footer />
 	</body>

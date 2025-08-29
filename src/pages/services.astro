@@ -1,0 +1,258 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title="Our Services | TechTalent Recruiting" description="Comprehensive IT recruiting services for software engineers, DevOps, cloud architects, and tech leadership roles." />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<!-- Hero Section -->
+			<section class="bg-gradient-to-r from-indigo-600 to-blue-600 text-white py-16 px-6 rounded-lg mb-16">
+				<div class="max-w-4xl mx-auto text-center">
+					<h1 class="text-4xl md:text-5xl font-bold mb-6">Our Recruiting Services</h1>
+					<p class="text-xl text-indigo-100 max-w-2xl mx-auto">
+						Specialized IT recruitment across all technology stacks and experience levels.
+					</p>
+				</div>
+			</section>
+
+			<!-- Services Grid -->
+			<section class="mb-16">
+				<div class="grid md:grid-cols-2 gap-12">
+					<!-- Software Engineering -->
+					<div class="bg-white p-8 rounded-lg shadow-lg border border-gray-100">
+						<div class="flex items-center mb-6">
+							<div class="text-4xl mr-4">💻</div>
+							<h2 class="text-3xl font-bold text-gray-800">Software Engineering</h2>
+						</div>
+						<p class="text-gray-600 mb-6">
+							Frontend, backend, and full-stack developers across all modern frameworks and programming languages.
+						</p>
+						
+						<div class="space-y-4">
+							<div>
+								<h3 class="font-semibold text-gray-800 mb-2">Frontend Development</h3>
+								<div class="flex flex-wrap gap-2">
+									<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">React</span>
+									<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Vue.js</span>
+									<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Angular</span>
+									<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">TypeScript</span>
+									<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Next.js</span>
+								</div>
+							</div>
+							
+							<div>
+								<h3 class="font-semibold text-gray-800 mb-2">Backend Development</h3>
+								<div class="flex flex-wrap gap-2">
+									<span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Node.js</span>
+									<span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Python</span>
+									<span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Java</span>
+									<span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">.NET</span>
+									<span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Go</span>
+								</div>
+							</div>
+							
+							<div>
+								<h3 class="font-semibold text-gray-800 mb-2">Mobile Development</h3>
+								<div class="flex flex-wrap gap-2">
+									<span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">React Native</span>
+									<span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Flutter</span>
+									<span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">iOS</span>
+									<span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Android</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- DevOps & Cloud -->
+					<div class="bg-white p-8 rounded-lg shadow-lg border border-gray-100">
+						<div class="flex items-center mb-6">
+							<div class="text-4xl mr-4">☁️</div>
+							<h2 class="text-3xl font-bold text-gray-800">DevOps & Cloud</h2>
+						</div>
+						<p class="text-gray-600 mb-6">
+							Infrastructure specialists, cloud architects, and DevOps engineers for modern deployment and scaling.
+						</p>
+						
+						<div class="space-y-4">
+							<div>
+								<h3 class="font-semibold text-gray-800 mb-2">Cloud Platforms</h3>
+								<div class="flex flex-wrap gap-2">
+									<span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">AWS</span>
+									<span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">Azure</span>
+									<span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">Google Cloud</span>
+									<span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">DigitalOcean</span>
+								</div>
+							</div>
+							
+							<div>
+								<h3 class="font-semibold text-gray-800 mb-2">Container & Orchestration</h3>
+								<div class="flex flex-wrap gap-2">
+									<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Docker</span>
+									<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Kubernetes</span>
+									<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Helm</span>
+									<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">OpenShift</span>
+								</div>
+							</div>
+							
+							<div>
+								<h3 class="font-semibold text-gray-800 mb-2">CI/CD & Monitoring</h3>
+								<div class="flex flex-wrap gap-2">
+									<span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Jenkins</span>
+									<span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">GitLab CI</span>
+									<span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Terraform</span>
+									<span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Prometheus</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Data & AI -->
+					<div class="bg-white p-8 rounded-lg shadow-lg border border-gray-100">
+						<div class="flex items-center mb-6">
+							<div class="text-4xl mr-4">📊</div>
+							<h2 class="text-3xl font-bold text-gray-800">Data & AI</h2>
+						</div>
+						<p class="text-gray-600 mb-6">
+							Data engineers, AI/ML specialists, and data scientists for modern data-driven organizations.
+						</p>
+						
+						<div class="space-y-4">
+							<div>
+								<h3 class="font-semibold text-gray-800 mb-2">Data Engineering</h3>
+								<div class="flex flex-wrap gap-2">
+									<span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">Apache Spark</span>
+									<span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">Kafka</span>
+									<span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">Airflow</span>
+									<span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">Snowflake</span>
+								</div>
+							</div>
+							
+							<div>
+								<h3 class="font-semibold text-gray-800 mb-2">Machine Learning</h3>
+								<div class="flex flex-wrap gap-2">
+									<span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">TensorFlow</span>
+									<span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">PyTorch</span>
+									<span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">MLflow</span>
+									<span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Kubeflow</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Leadership -->
+					<div class="bg-white p-8 rounded-lg shadow-lg border border-gray-100">
+						<div class="flex items-center mb-6">
+							<div class="text-4xl mr-4">👨‍💼</div>
+							<h2 class="text-3xl font-bold text-gray-800">Tech Leadership</h2>
+						</div>
+						<p class="text-gray-600 mb-6">
+							Engineering managers, architects, and C-level executives who can drive technical vision and teams.
+						</p>
+						
+						<div class="space-y-4">
+							<div>
+								<h3 class="font-semibold text-gray-800 mb-2">Management Roles</h3>
+								<ul class="text-gray-600 space-y-1">
+									<li>• Engineering Managers</li>
+									<li>• VP of Engineering</li>
+									<li>• Chief Technology Officer</li>
+									<li>• Director of Engineering</li>
+								</ul>
+							</div>
+							
+							<div>
+								<h3 class="font-semibold text-gray-800 mb-2">Technical Leadership</h3>
+								<ul class="text-gray-600 space-y-1">
+									<li>• Principal Engineers</li>
+									<li>• Solution Architects</li>
+									<li>• Tech Leads</li>
+									<li>• Staff Engineers</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Process Section -->
+			<section class="bg-gray-50 py-16 px-6 rounded-lg mb-16">
+				<div class="max-w-4xl mx-auto">
+					<h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Recruitment Process</h2>
+					<div class="grid md:grid-cols-2 gap-8">
+						<div class="space-y-6">
+							<div class="flex items-start">
+								<div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-4 mt-1">1</div>
+								<div>
+									<h3 class="font-bold text-gray-800 mb-2">Requirements Analysis</h3>
+									<p class="text-gray-600">Deep dive into your technical needs, team culture, and growth plans.</p>
+								</div>
+							</div>
+							
+							<div class="flex items-start">
+								<div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-4 mt-1">2</div>
+								<div>
+									<h3 class="font-bold text-gray-800 mb-2">Talent Sourcing</h3>
+									<p class="text-gray-600">Targeted outreach to both active and passive candidates in our network.</p>
+								</div>
+							</div>
+							
+							<div class="flex items-start">
+								<div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-4 mt-1">3</div>
+								<div>
+									<h3 class="font-bold text-gray-800 mb-2">Technical Screening</h3>
+									<p class="text-gray-600">Comprehensive technical evaluation and cultural fit assessment.</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="space-y-6">
+							<div class="flex items-start">
+								<div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-4 mt-1">4</div>
+								<div>
+									<h3 class="font-bold text-gray-800 mb-2">Client Presentation</h3>
+									<p class="text-gray-600">Present only the most qualified candidates with detailed profiles.</p>
+								</div>
+							</div>
+							
+							<div class="flex items-start">
+								<div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-4 mt-1">5</div>
+								<div>
+									<h3 class="font-bold text-gray-800 mb-2">Interview Coordination</h3>
+									<p class="text-gray-600">Manage the entire interview process and provide feedback loops.</p>
+								</div>
+							</div>
+							
+							<div class="flex items-start">
+								<div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-4 mt-1">6</div>
+								<div>
+									<h3 class="font-bold text-gray-800 mb-2">Successful Placement</h3>
+									<p class="text-gray-600">Offer negotiation, onboarding support, and follow-up for long-term success.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA Section -->
+			<section class="bg-blue-600 text-white py-16 px-6 rounded-lg text-center">
+				<h2 class="text-3xl font-bold mb-4">Ready to Find Your Next Tech Star?</h2>
+				<p class="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
+					Let's discuss your specific hiring needs and create a customized recruitment strategy.
+				</p>
+				<a href="/contact" class="bg-white text-blue-600 hover:bg-blue-50 font-bold py-4 px-8 rounded-lg transition-colors text-lg">
+					Start Your Search Today
+				</a>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
